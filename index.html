@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Tn by tony612</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Tn</h1>
+        <p>A wrapper for https://github.com/alloy/terminal-notifier to make a terminal notification after some command is done</p>
+
+        <p class="view"><a href="https://github.com/tony612/tn">View the Project on GitHub <small>tony612/tn</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/tony612/tn/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/tony612/tn/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/tony612/tn">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="tnterminal-notifier" class="anchor" href="#tnterminal-notifier"><span class="octicon octicon-link"></span></a>tn(terminal-notifier)</h1>
+
+<p>tn is a wrapper for <a href="https://github.com/alloy/terminal-notifier">terminal-notifier</a>
+to make a terminal notification after some command is done</p>
+
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p><em>I'll try to add this to homebrew ASAP</em></p>
+
+<p>It depends on terminal-notifier, so you have to install it first with</p>
+
+<pre><code>$ brew install terminal-notifier
+</code></pre>
+
+<p>Then copy <code>bin/tn</code> to your PATH like <code>/usr/local/bin</code></p>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>Just prepend <code>tn</code> to your command</p>
+
+<pre><code>$ tn rake -T
+</code></pre>
+
+<p>You'll receive the notification if it successes</p>
+
+<p><img src="https://cloud.githubusercontent.com/assets/1253659/4245092/6441499a-3a2e-11e4-9a5f-f66157668c75.png" alt=""></p>
+
+<p>However, for a failed command like this</p>
+
+<pre><code>$ tn rake foo
+</code></pre>
+
+<p>you'll get</p>
+
+<p><img src="https://cloud.githubusercontent.com/assets/1253659/4245100/90945ae6-3a2e-11e4-9d08-4a7e7f90c2e3.png" alt=""></p>
+
+<h2>
+<a name="todo" class="anchor" href="#todo"><span class="octicon octicon-link"></span></a>TODO</h2>
+
+<ul>
+<li>Installation via homebrew</li>
+<li>Completions<br>
+</li>
+</ul><h2>
+<a name="copyright" class="anchor" href="#copyright"><span class="octicon octicon-link"></span></a>Copyright</h2>
+
+<p>Copyright (c) 2014 Tony Han. See <a href="/LICENSE">LICENSE</a> for details.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/tony612">tony612</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
