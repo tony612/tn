@@ -1,5 +1,29 @@
 #!/bin/sh
 
+program=`basename $0`
+if [ $# -eq 0 ] || [ "$1" = "--help" ] || [ "$1" = "-h" ]; then
+  echo "Usage: $program [command foo] [arguments for foo]
+
+  -v, --version     Prints version and exit
+  -h, --help        Display this help" >&2
+  exit 1
+elif [ "$1" == "-v" ] || [ "$1" == "--version" ]
+then
+  readlink_f () {
+    cd "$(dirname "$1")" > /dev/null
+    filename="$(basename "$1")"
+    if [ -h "$filename" ]; then
+      readlink_f "$(readlink "$filename")"
+    else
+      echo "`pwd -P`/$filename"
+    fi
+  }
+  SELF=$(readlink_f "$0")
+  version=`cat $SELF/../../VERSION`
+  echo "$program $version"
+  exit 1
+fi
+
 if $@; then
   terminal-notifier -title "💚 Done" -message "$*" -sender com.googlecode.iterm2
 else
