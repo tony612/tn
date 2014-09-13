@@ -21,7 +21,7 @@ then
   SELF=$(readlink_f "$0")
   version=`cat $SELF/../../VERSION`
   echo "$program $version"
-  exit 1
+  exit 0
 fi
 
 if $@; then
