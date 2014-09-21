@@ -5,15 +5,16 @@ to make a terminal notification after some command is done
 
 ## Installation
 
-*I'll try to add this to homebrew ASAP*
-
-It depends on terminal-notifier, so you have to install it first with
-
 ```
-$ brew install terminal-notifier
+$ brew tap tony612/pat
+$ brew install tn
 ```
 
-Then copy `bin/tn` to your PATH like `/usr/local/bin`
+or
+
+```
+$ brew install tony612/pat/tn
+```
 
 ## Usage
 
@@ -39,7 +40,7 @@ you'll get
 
 ## TODO
 
-- Installation via homebrew
+- ~~Installation via homebrew~~
 - Completions  
 
 ## Copyright
